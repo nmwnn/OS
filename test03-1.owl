@@ -1,0 +1,794 @@
+Prefix(:=<http://www.semanticweb.org/wnn/ontologies/2019/2/untitled-ontology-77#>)
+Prefix(owl:=<http://www.w3.org/2002/07/owl#>)
+Prefix(rdf:=<http://www.w3.org/1999/02/22-rdf-syntax-ns#>)
+Prefix(xml:=<http://www.w3.org/XML/1998/namespace>)
+Prefix(xsd:=<http://www.w3.org/2001/XMLSchema#>)
+Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
+
+
+Ontology(<http://www.semanticweb.org/wnn/ontologies/2019/2/untitled-ontology-77>
+
+Declaration(Class(:AccessSequence))
+Declaration(Class(:Algorithm))
+Declaration(Class(:ApplicationProgram))
+Declaration(Class(:AtomicOperation))
+Declaration(Class(:BankersAlgorithm))
+Declaration(Class(:BoundedBuffer))
+Declaration(Class(:Buffer))
+Declaration(Class(:CPU))
+Declaration(Class(:CPUAboutCoreNumber))
+Declaration(Class(:CPUAboutState))
+Declaration(Class(:CPURegister))
+Declaration(Class(:CPUScheduler))
+Declaration(Class(:CPUState))
+Declaration(Class(:CircularWait))
+Declaration(Class(:CommunicationLink))
+Declaration(Class(:ConditionVaribleQueue))
+Declaration(Class(:ConditionVaribleSignal))
+Declaration(Class(:ConditionVaribleWait))
+Declaration(Class(:ContidionVariable))
+Declaration(Class(:CriticalResource))
+Declaration(Class(:CriticalSection))
+Declaration(Class(:DeadLock))
+Declaration(Class(:DeadLockAvoidance))
+Declaration(Class(:DeadLockCharacterization))
+Declaration(Class(:DeadLockDetection))
+Declaration(Class(:DeadLockPart))
+Declaration(Class(:DeadLockPrevention))
+Declaration(Class(:DetectionAlgorithm))
+Declaration(Class(:DirectCommunication))
+Declaration(Class(:DisableInterrupt))
+Declaration(Class(:Dispatcher))
+Declaration(Class(:Driver))
+Declaration(Class(:FCFSScheduling))
+Declaration(Class(:Fairness))
+Declaration(Class(:GeneralRegister))
+Declaration(Class(:Hardware))
+Declaration(Class(:HoldAndWait))
+Declaration(Class(:ImpreemtiveScheduling))
+Declaration(Class(:IndirectCommunication))
+Declaration(Class(:JobScheduler))
+Declaration(Class(:KernelStack))
+Declaration(Class(:KernelStateCPU))
+Declaration(Class(:KernelThread))
+Declaration(Class(:Lock))
+Declaration(Class(:LongTermScheduler))
+Declaration(Class(:MailBox))
+Declaration(Class(:MessagePassingWays))
+Declaration(Class(:MethodsForHandlingDeadLocks))
+Declaration(Class(:MidTermScheduler))
+Declaration(Class(:Monitor))
+Declaration(Class(:MutualExclusion))
+Declaration(Class(:NoPreemption))
+Declaration(Class(:OSAboutState))
+Declaration(Class(:OSState))
+Declaration(Class(:OperatingSystem))
+Declaration(Class(:POperation))
+Declaration(Class(:PS))
+Declaration(Class(:PSW))
+Declaration(Class(:PetersonAlgorithm))
+Declaration(Class(:Port))
+Declaration(Class(:PreemptiveScheduling))
+Declaration(Class(:PriorityScheduling))
+Declaration(Class(:Process))
+Declaration(Class(:ProcessControlBlock))
+Declaration(Class(:ProcessPart))
+Declaration(Class(:Program))
+Declaration(Class(:RaceCondition))
+Declaration(Class(:Receive))
+Declaration(Class(:RecoveryFromDeadLock))
+Declaration(Class(:Resource))
+Declaration(Class(:ResponseTime))
+Declaration(Class(:RoundRobinScheduling))
+Declaration(Class(:SJFScheduling))
+Declaration(Class(:SafeState))
+Declaration(Class(:SafetyAlgorithm))
+Declaration(Class(:Scheduler))
+Declaration(Class(:SchedulingAlgorithm))
+Declaration(Class(:SchedulingCriteria))
+Declaration(Class(:SchedulingWays))
+Declaration(Class(:Semaphore))
+Declaration(Class(:Send))
+Declaration(Class(:SharedMemory))
+Declaration(Class(:SharedMemoryWays))
+Declaration(Class(:ShortTermScheduler))
+Declaration(Class(:SingleCoreProcessor))
+Declaration(Class(:Software))
+Declaration(Class(:StackPointerRegister))
+Declaration(Class(:SwapInstruction))
+Declaration(Class(:Synchronization))
+Declaration(Class(:SynchronizationByHardware))
+Declaration(Class(:SynchronizationSolution))
+Declaration(Class(:SynchronousPart))
+Declaration(Class(:SystemCall))
+Declaration(Class(:SystemPart))
+Declaration(Class(:TestAndSetInstruction))
+Declaration(Class(:Thread))
+Declaration(Class(:ThreadAboutBurst))
+Declaration(Class(:ThreadAboutState))
+Declaration(Class(:ThreadCPUBounded))
+Declaration(Class(:ThreadCommunicationPart))
+Declaration(Class(:ThreadCommunicationWays))
+Declaration(Class(:ThreadContext))
+Declaration(Class(:ThreadControlBlock))
+Declaration(Class(:ThreadCreation))
+Declaration(Class(:ThreadIOBounded))
+Declaration(Class(:ThreadLibrary))
+Declaration(Class(:ThreadNew))
+Declaration(Class(:ThreadOperation))
+Declaration(Class(:ThreadQueue))
+Declaration(Class(:ThreadReady))
+Declaration(Class(:ThreadRunning))
+Declaration(Class(:ThreadStack))
+Declaration(Class(:ThreadState))
+Declaration(Class(:ThreadTerminated))
+Declaration(Class(:ThreadTermination))
+Declaration(Class(:ThreadWaiting))
+Declaration(Class(:TurnAroundTime))
+Declaration(Class(:UnboundedBuffer))
+Declaration(Class(:UnsafeState))
+Declaration(Class(:UserStack))
+Declaration(Class(:UserStateCPU))
+Declaration(Class(:UserThread))
+Declaration(Class(:VOperation))
+Declaration(Class(:WaitingTime))
+Declaration(ObjectProperty(:Access))
+Declaration(ObjectProperty(:AppliedTo))
+Declaration(ObjectProperty(:Associate))
+Declaration(ObjectProperty(:Avoid))
+Declaration(ObjectProperty(:BeManagedBy))
+Declaration(ObjectProperty(:BeOperatedOn))
+Declaration(ObjectProperty(:BelongTo))
+Declaration(ObjectProperty(:Build))
+Declaration(ObjectProperty(:Call))
+Declaration(ObjectProperty(:Change))
+Declaration(ObjectProperty(:Consider))
+Declaration(ObjectProperty(:Create))
+Declaration(ObjectProperty(:Execute))
+Declaration(ObjectProperty(:Has))
+Declaration(ObjectProperty(:Lead))
+Declaration(ObjectProperty(:Operate))
+Declaration(ObjectProperty(:PartOf))
+Declaration(ObjectProperty(:Prevent))
+Declaration(ObjectProperty(:Protect))
+Declaration(ObjectProperty(:ReadAccess))
+Declaration(ObjectProperty(:RequestToRelease))
+Declaration(ObjectProperty(:RequestToUse))
+Declaration(ObjectProperty(:Restore))
+Declaration(ObjectProperty(:Save))
+Declaration(ObjectProperty(:Select))
+Declaration(ObjectProperty(:Solve))
+Declaration(ObjectProperty(:SwitchTo))
+Declaration(ObjectProperty(:Terminate))
+Declaration(ObjectProperty(:TransitTo))
+Declaration(ObjectProperty(:Use))
+Declaration(ObjectProperty(:WriteAccess))
+Declaration(ObjectProperty(:isExclusiveTo))
+Declaration(DataProperty(:Id))
+Declaration(DataProperty(:ProcessId))
+Declaration(DataProperty(:ThreadId))
+Declaration(NamedIndividual(:CPUBurstMoreThanIOBurst))
+Declaration(NamedIndividual(:DeadLockstate))
+Declaration(NamedIndividual(:IOBurstMoreThanCPUBurst))
+Declaration(NamedIndividual(:Kernelstate))
+Declaration(NamedIndividual(:Safestate))
+Declaration(NamedIndividual(:ThreadNEW))
+Declaration(NamedIndividual(:ThreadREADY))
+Declaration(NamedIndividual(:ThreadRUNNING))
+Declaration(NamedIndividual(:ThreadTERMINATED))
+Declaration(NamedIndividual(:ThreadWAITING))
+Declaration(NamedIndividual(:Unsafestate))
+Declaration(NamedIndividual(:Userstate))
+############################
+#   Object Properties
+############################
+
+# Object Property: :BeOperatedOn (:BeOperatedOn)
+
+SubObjectPropertyOf(:BeOperatedOn owl:topObjectProperty)
+
+# Object Property: :RequestToRelease (:RequestToRelease)
+
+SubObjectPropertyOf(:RequestToRelease owl:topObjectProperty)
+
+# Object Property: :WriteAccess (:WriteAccess)
+
+SubObjectPropertyOf(:WriteAccess owl:topObjectProperty)
+
+
+############################
+#   Data Properties
+############################
+
+# Data Property: :ProcessId (:ProcessId)
+
+SubDataPropertyOf(:ProcessId :Id)
+
+# Data Property: :ThreadId (:ThreadId)
+
+SubDataPropertyOf(:ThreadId :Id)
+
+
+
+############################
+#   Classes
+############################
+
+# Class: :AccessSequence (:AccessSequence)
+
+SubClassOf(:AccessSequence :SynchronousPart)
+
+# Class: :ApplicationProgram (:ApplicationProgram)
+
+SubClassOf(:ApplicationProgram :Program)
+SubClassOf(:ApplicationProgram ObjectSomeValuesFrom(:Operate :Thread))
+
+# Class: :AtomicOperation (:AtomicOperation)
+
+SubClassOf(:AtomicOperation :SynchronousPart)
+SubClassOf(:AtomicOperation ObjectSomeValuesFrom(:Operate :Semaphore))
+
+# Class: :BankersAlgorithm (:BankersAlgorithm)
+
+SubClassOf(:BankersAlgorithm :DeadLockAvoidance)
+
+# Class: :BoundedBuffer (:BoundedBuffer)
+
+SubClassOf(:BoundedBuffer :Buffer)
+
+# Class: :Buffer (:Buffer)
+
+SubClassOf(:Buffer :ThreadCommunicationPart)
+
+# Class: :CPU (:CPU)
+
+SubClassOf(:CPU :Hardware)
+SubClassOf(:CPU ObjectSomeValuesFrom(:Has :CPURegister))
+SubClassOf(:CPU ObjectSomeValuesFrom(:Has :CPUState))
+
+# Class: :CPUAboutCoreNumber (:CPUAboutCoreNumber)
+
+SubClassOf(:CPUAboutCoreNumber :CPU)
+
+# Class: :CPUAboutState (:CPUAboutState)
+
+SubClassOf(:CPUAboutState :CPU)
+
+# Class: :CPURegister (:CPURegister)
+
+EquivalentClasses(:CPURegister :ThreadContext)
+SubClassOf(:CPURegister :Hardware)
+
+# Class: :CPUScheduler (:CPUScheduler)
+
+EquivalentClasses(:CPUScheduler :ShortTermScheduler)
+SubClassOf(:CPUScheduler :Scheduler)
+SubClassOf(:CPUScheduler ObjectSomeValuesFrom(:Has :SchedulingWays))
+SubClassOf(:CPUScheduler ObjectSomeValuesFrom(:Select :ThreadReady))
+SubClassOf(:CPUScheduler ObjectSomeValuesFrom(:Use :SchedulingAlgorithm))
+
+# Class: :CPUState (:CPUState)
+
+EquivalentClasses(:CPUState ObjectOneOf(:Kernelstate :Userstate))
+SubClassOf(:CPUState :SystemPart)
+
+# Class: :CircularWait (:CircularWait)
+
+SubClassOf(:CircularWait :DeadLockCharacterization)
+
+# Class: :CommunicationLink (:CommunicationLink)
+
+SubClassOf(:CommunicationLink :ThreadCommunicationPart)
+
+# Class: :ConditionVaribleQueue (:ConditionVaribleQueue)
+
+SubClassOf(:ConditionVaribleQueue :ThreadQueue)
+
+# Class: :ConditionVaribleSignal (:ConditionVaribleSignal)
+
+SubClassOf(:ConditionVaribleSignal :ProcessPart)
+SubClassOf(:ConditionVaribleSignal ObjectSomeValuesFrom(:Operate :ConditionVaribleQueue))
+
+# Class: :ConditionVaribleWait (:ConditionVaribleWait)
+
+SubClassOf(:ConditionVaribleWait :ProcessPart)
+SubClassOf(:ConditionVaribleWait ObjectSomeValuesFrom(:Operate :ConditionVaribleQueue))
+
+# Class: :ContidionVariable (:ContidionVariable)
+
+SubClassOf(:ContidionVariable :ProcessPart)
+SubClassOf(:ContidionVariable ObjectSomeValuesFrom(:Has :ConditionVaribleQueue))
+SubClassOf(:ContidionVariable ObjectSomeValuesFrom(:Has :ConditionVaribleSignal))
+SubClassOf(:ContidionVariable ObjectSomeValuesFrom(:Has :ConditionVaribleWait))
+
+# Class: :CriticalResource (:CriticalResource)
+
+SubClassOf(:CriticalResource :Resource)
+
+# Class: :CriticalSection (:CriticalSection)
+
+SubClassOf(:CriticalSection :SynchronousPart)
+SubClassOf(:CriticalSection ObjectSomeValuesFrom(:PartOf :Program))
+SubClassOf(:CriticalSection ObjectSomeValuesFrom(:Use :CriticalResource))
+SubClassOf(:CriticalSection ObjectSomeValuesFrom(:isExclusiveTo :CriticalSection))
+
+# Class: :DeadLock (:DeadLock)
+
+EquivalentClasses(:DeadLock ObjectIntersectionOf(:OSAboutState ObjectHasValue(:Has :DeadLockstate)))
+SubClassOf(:DeadLock :DeadLockPart)
+SubClassOf(:DeadLock :OSAboutState)
+SubClassOf(:DeadLock :UnsafeState)
+SubClassOf(:DeadLock ObjectSomeValuesFrom(:Has :DeadLockCharacterization))
+SubClassOf(:DeadLock ObjectMinCardinality(2 :Has :Thread))
+
+# Class: :DeadLockAvoidance (:DeadLockAvoidance)
+
+SubClassOf(:DeadLockAvoidance :MethodsForHandlingDeadLocks)
+
+# Class: :DeadLockCharacterization (:DeadLockCharacterization)
+
+SubClassOf(:DeadLockCharacterization :DeadLockPart)
+
+# Class: :DeadLockDetection (:DeadLockDetection)
+
+SubClassOf(:DeadLockDetection :MethodsForHandlingDeadLocks)
+
+# Class: :DeadLockPrevention (:DeadLockPrevention)
+
+SubClassOf(:DeadLockPrevention :MethodsForHandlingDeadLocks)
+SubClassOf(:DeadLockPrevention ObjectMinCardinality(1 :Prevent :DeadLockCharacterization))
+
+# Class: :DetectionAlgorithm (:DetectionAlgorithm)
+
+SubClassOf(:DetectionAlgorithm :DeadLockPrevention)
+
+# Class: :DirectCommunication (:DirectCommunication)
+
+SubClassOf(:DirectCommunication :MessagePassingWays)
+
+# Class: :DisableInterrupt (:DisableInterrupt)
+
+SubClassOf(:DisableInterrupt :SynchronizationByHardware)
+SubClassOf(:DisableInterrupt ObjectSomeValuesFrom(:AppliedTo :SingleCoreProcessor))
+SubClassOf(:DisableInterrupt ObjectSomeValuesFrom(:Protect :CriticalSection))
+
+# Class: :Dispatcher (:Dispatcher)
+
+SubClassOf(:Dispatcher :Program)
+SubClassOf(:Dispatcher ObjectSomeValuesFrom(:SwitchTo :ThreadReady))
+SubClassOf(:Dispatcher ObjectExactCardinality(1 :Restore :ThreadContext))
+SubClassOf(:Dispatcher ObjectExactCardinality(1 :Save :ThreadContext))
+
+# Class: :Driver (:Driver)
+
+SubClassOf(:Driver :Program)
+
+# Class: :FCFSScheduling (:FCFSScheduling)
+
+SubClassOf(:FCFSScheduling :SchedulingAlgorithm)
+SubClassOf(:FCFSScheduling ObjectSomeValuesFrom(:Consider :Fairness))
+
+# Class: :Fairness (:Fairness)
+
+SubClassOf(:Fairness :SchedulingCriteria)
+
+# Class: :GeneralRegister (:GeneralRegister)
+
+SubClassOf(:GeneralRegister :CPURegister)
+
+# Class: :Hardware (:Hardware)
+
+SubClassOf(:Hardware :SystemPart)
+
+# Class: :HoldAndWait (:HoldAndWait)
+
+SubClassOf(:HoldAndWait :DeadLockCharacterization)
+
+# Class: :ImpreemtiveScheduling (:ImpreemtiveScheduling)
+
+SubClassOf(:ImpreemtiveScheduling :SchedulingWays)
+
+# Class: :IndirectCommunication (:IndirectCommunication)
+
+SubClassOf(:IndirectCommunication :MessagePassingWays)
+
+# Class: :JobScheduler (:JobScheduler)
+
+EquivalentClasses(:JobScheduler :LongTermScheduler)
+SubClassOf(:JobScheduler :Scheduler)
+
+# Class: :KernelStack (:KernelStack)
+
+SubClassOf(:KernelStack :ThreadStack)
+
+# Class: :KernelStateCPU (:KernelStateCPU)
+
+EquivalentClasses(:KernelStateCPU ObjectIntersectionOf(:CPUAboutState ObjectHasValue(:Has :Kernelstate)))
+SubClassOf(:KernelStateCPU :CPUAboutState)
+
+# Class: :KernelThread (:KernelThread)
+
+SubClassOf(:KernelThread :ThreadLibrary)
+
+# Class: :Lock (:Lock)
+
+SubClassOf(:Lock :SynchronizationByHardware)
+SubClassOf(:Lock ObjectSomeValuesFrom(:AppliedTo :CriticalResource))
+
+# Class: :LongTermScheduler (:LongTermScheduler)
+
+SubClassOf(:LongTermScheduler :Scheduler)
+
+# Class: :MailBox (:MailBox)
+
+SubClassOf(:MailBox :ThreadCommunicationPart)
+
+# Class: :MessagePassingWays (:MessagePassingWays)
+
+SubClassOf(:MessagePassingWays :ThreadCommunicationWays)
+SubClassOf(:MessagePassingWays ObjectSomeValuesFrom(:BeManagedBy :OperatingSystem))
+SubClassOf(:MessagePassingWays ObjectSomeValuesFrom(:Has :CommunicationLink))
+SubClassOf(:MessagePassingWays ObjectSomeValuesFrom(:Use ObjectIntersectionOf(:MailBox :Port)))
+SubClassOf(:MessagePassingWays ObjectSomeValuesFrom(:Use ObjectIntersectionOf(:Receive :Send)))
+
+# Class: :MethodsForHandlingDeadLocks (:MethodsForHandlingDeadLocks)
+
+SubClassOf(:MethodsForHandlingDeadLocks :DeadLockPart)
+SubClassOf(:MethodsForHandlingDeadLocks ObjectSomeValuesFrom(:Solve :DeadLock))
+
+# Class: :MidTermScheduler (:MidTermScheduler)
+
+SubClassOf(:MidTermScheduler :Scheduler)
+
+# Class: :Monitor (:Monitor)
+
+SubClassOf(:Monitor :SynchronizationSolution)
+SubClassOf(:Monitor ObjectSomeValuesFrom(:Has :ContidionVariable))
+SubClassOf(:Monitor ObjectSomeValuesFrom(:Has :CriticalSection))
+
+# Class: :MutualExclusion (:MutualExclusion)
+
+SubClassOf(:MutualExclusion :DeadLockCharacterization)
+
+# Class: :NoPreemption (:NoPreemption)
+
+SubClassOf(:NoPreemption :DeadLockCharacterization)
+
+# Class: :OSAboutState (:OSAboutState)
+
+EquivalentClasses(:OSAboutState ObjectIntersectionOf(:OSAboutState ObjectHasValue(:Has :Safestate)))
+SubClassOf(:OSAboutState :OperatingSystem)
+
+# Class: :OSState (:OSState)
+
+EquivalentClasses(:OSState ObjectOneOf(:DeadLockstate :Safestate :Unsafestate))
+SubClassOf(:OSState :SystemPart)
+
+# Class: :OperatingSystem (:OperatingSystem)
+
+SubClassOf(:OperatingSystem :Program)
+SubClassOf(:OperatingSystem ObjectSomeValuesFrom(:Build :SharedMemory))
+SubClassOf(:OperatingSystem ObjectSomeValuesFrom(:Has :Dispatcher))
+SubClassOf(:OperatingSystem ObjectSomeValuesFrom(:Has :Driver))
+SubClassOf(:OperatingSystem ObjectSomeValuesFrom(:Has :Scheduler))
+SubClassOf(:OperatingSystem ObjectSomeValuesFrom(:Has :SystemCall))
+SubClassOf(:OperatingSystem ObjectSomeValuesFrom(:Operate :ThreadOperation))
+
+# Class: :POperation (:POperation)
+
+SubClassOf(:POperation :AtomicOperation)
+SubClassOf(:POperation ObjectSomeValuesFrom(:RequestToUse :CriticalResource))
+
+# Class: :PS (:PS)
+
+SubClassOf(:PS :CPURegister)
+
+# Class: :PSW (:PSW)
+
+SubClassOf(:PSW :CPURegister)
+
+# Class: :PetersonAlgorithm (:PetersonAlgorithm)
+
+SubClassOf(:PetersonAlgorithm :SynchronizationSolution)
+
+# Class: :Port (:Port)
+
+SubClassOf(:Port :ThreadCommunicationPart)
+
+# Class: :PreemptiveScheduling (:PreemptiveScheduling)
+
+SubClassOf(:PreemptiveScheduling :SchedulingWays)
+
+# Class: :PriorityScheduling (:PriorityScheduling)
+
+SubClassOf(:PriorityScheduling :SchedulingAlgorithm)
+
+# Class: :Process (:Process)
+
+EquivalentClasses(:Process :ProcessControlBlock)
+SubClassOf(:Process :ProcessPart)
+SubClassOf(:Process ObjectSomeValuesFrom(:Has :Thread))
+SubClassOf(:Process DataSomeValuesFrom(:ProcessId xsd:integer))
+
+# Class: :ProcessControlBlock (:ProcessControlBlock)
+
+SubClassOf(:ProcessControlBlock :ProcessPart)
+
+# Class: :Program (:Program)
+
+SubClassOf(:Program :Software)
+
+# Class: :RaceCondition (:RaceCondition)
+
+SubClassOf(:RaceCondition :SynchronousPart)
+SubClassOf(:RaceCondition ObjectSomeValuesFrom(:Associate :AccessSequence))
+SubClassOf(:RaceCondition ObjectMinCardinality(2 :Associate :Thread))
+
+# Class: :Receive (:Receive)
+
+SubClassOf(:Receive :SystemCall)
+
+# Class: :RecoveryFromDeadLock (:RecoveryFromDeadLock)
+
+SubClassOf(:RecoveryFromDeadLock :DeadLockPrevention)
+
+# Class: :Resource (:Resource)
+
+SubClassOf(:Resource :SystemPart)
+
+# Class: :ResponseTime (:ResponseTime)
+
+SubClassOf(:ResponseTime :SchedulingCriteria)
+
+# Class: :RoundRobinScheduling (:RoundRobinScheduling)
+
+SubClassOf(:RoundRobinScheduling :SchedulingAlgorithm)
+
+# Class: :SJFScheduling (:SJFScheduling)
+
+SubClassOf(:SJFScheduling :SchedulingAlgorithm)
+SubClassOf(:SJFScheduling ObjectSomeValuesFrom(:Consider :TurnAroundTime))
+
+# Class: :SafeState (:SafeState)
+
+EquivalentClasses(:SafeState ObjectIntersectionOf(:OSAboutState ObjectHasValue(:Has :Safestate)))
+SubClassOf(:SafeState :OSAboutState)
+
+# Class: :SafetyAlgorithm (:SafetyAlgorithm)
+
+SubClassOf(:SafetyAlgorithm :DeadLockAvoidance)
+
+# Class: :Scheduler (:Scheduler)
+
+SubClassOf(:Scheduler :Program)
+
+# Class: :SchedulingAlgorithm (:SchedulingAlgorithm)
+
+SubClassOf(:SchedulingAlgorithm :Algorithm)
+SubClassOf(:SchedulingAlgorithm ObjectSomeValuesFrom(:Consider :SchedulingCriteria))
+
+# Class: :SchedulingCriteria (:SchedulingCriteria)
+
+SubClassOf(:SchedulingCriteria :ProcessPart)
+
+# Class: :SchedulingWays (:SchedulingWays)
+
+SubClassOf(:SchedulingWays :ProcessPart)
+
+# Class: :Semaphore (:Semaphore)
+
+SubClassOf(:Semaphore :SynchronizationSolution)
+SubClassOf(:Semaphore ObjectSomeValuesFrom(:AppliedTo :CriticalResource))
+
+# Class: :Send (:Send)
+
+SubClassOf(:Send :SystemCall)
+
+# Class: :SharedMemory (:SharedMemory)
+
+SubClassOf(:SharedMemory :ThreadCommunicationPart)
+SubClassOf(:SharedMemory ObjectSomeValuesFrom(:Has :Buffer))
+
+# Class: :SharedMemoryWays (:SharedMemoryWays)
+
+SubClassOf(:SharedMemoryWays :ThreadCommunicationWays)
+SubClassOf(:SharedMemoryWays ObjectSomeValuesFrom(:BeManagedBy :ApplicationProgram))
+SubClassOf(:SharedMemoryWays ObjectSomeValuesFrom(:Consider :Synchronization))
+SubClassOf(:SharedMemoryWays ObjectSomeValuesFrom(:Use :SharedMemory))
+
+# Class: :ShortTermScheduler (:ShortTermScheduler)
+
+SubClassOf(:ShortTermScheduler :Scheduler)
+
+# Class: :SingleCoreProcessor (:SingleCoreProcessor)
+
+SubClassOf(:SingleCoreProcessor :CPUAboutCoreNumber)
+
+# Class: :Software (:Software)
+
+SubClassOf(:Software :SystemPart)
+
+# Class: :StackPointerRegister (:StackPointerRegister)
+
+SubClassOf(:StackPointerRegister :CPURegister)
+
+# Class: :SwapInstruction (:SwapInstruction)
+
+SubClassOf(:SwapInstruction :SynchronizationByHardware)
+
+# Class: :Synchronization (:Synchronization)
+
+SubClassOf(:Synchronization :SynchronousPart)
+SubClassOf(:Synchronization ObjectSomeValuesFrom(:Avoid :RaceCondition))
+
+# Class: :SynchronizationByHardware (:SynchronizationByHardware)
+
+SubClassOf(:SynchronizationByHardware :SynchronizationSolution)
+
+# Class: :SynchronizationSolution (:SynchronizationSolution)
+
+SubClassOf(:SynchronizationSolution :SynchronousPart)
+SubClassOf(:SynchronizationSolution ObjectSomeValuesFrom(:Solve :Synchronization))
+
+# Class: :SynchronousPart (:SynchronousPart)
+
+SubClassOf(:SynchronousPart :ProcessPart)
+
+# Class: :SystemCall (:SystemCall)
+
+SubClassOf(:SystemCall :Program)
+
+# Class: :TestAndSetInstruction (:TestAndSetInstruction)
+
+SubClassOf(:TestAndSetInstruction :SynchronizationByHardware)
+
+# Class: :Thread (:Thread)
+
+EquivalentClasses(:Thread :ThreadControlBlock)
+SubClassOf(:Thread :ProcessPart)
+SubClassOf(:Thread ObjectSomeValuesFrom(:Access :CriticalResource))
+SubClassOf(:Thread ObjectSomeValuesFrom(:BelongTo :Process))
+SubClassOf(:Thread ObjectSomeValuesFrom(:Has :ThreadContext))
+SubClassOf(:Thread ObjectSomeValuesFrom(:Has :ThreadStack))
+SubClassOf(:Thread ObjectSomeValuesFrom(:Has :ThreadState))
+SubClassOf(:Thread ObjectSomeValuesFrom(:ReadAccess :SharedMemory))
+SubClassOf(:Thread ObjectSomeValuesFrom(:WriteAccess :SharedMemory))
+SubClassOf(:Thread ObjectExactCardinality(1 :Execute :Program))
+SubClassOf(:Thread DataSomeValuesFrom(:ThreadId xsd:integer))
+
+# Class: :ThreadAboutBurst (:ThreadAboutBurst)
+
+SubClassOf(:ThreadAboutBurst :Thread)
+
+# Class: :ThreadAboutState (:ThreadAboutState)
+
+SubClassOf(:ThreadAboutState :Thread)
+
+# Class: :ThreadCPUBounded (:ThreadCPUBounded)
+
+EquivalentClasses(:ThreadCPUBounded ObjectOneOf(:CPUBurstMoreThanIOBurst))
+SubClassOf(:ThreadCPUBounded :ThreadAboutBurst)
+
+# Class: :ThreadCommunicationPart (:ThreadCommunicationPart)
+
+SubClassOf(:ThreadCommunicationPart :ProcessPart)
+
+# Class: :ThreadCommunicationWays (:ThreadCommunicationWays)
+
+SubClassOf(:ThreadCommunicationWays :ThreadCommunicationPart)
+
+# Class: :ThreadContext (:ThreadContext)
+
+SubClassOf(:ThreadContext :ProcessPart)
+
+# Class: :ThreadControlBlock (:ThreadControlBlock)
+
+SubClassOf(:ThreadControlBlock :ProcessPart)
+
+# Class: :ThreadCreation (:ThreadCreation)
+
+SubClassOf(:ThreadCreation :ThreadOperation)
+SubClassOf(:ThreadCreation ObjectSomeValuesFrom(:Create :Thread))
+
+# Class: :ThreadIOBounded (:ThreadIOBounded)
+
+EquivalentClasses(:ThreadIOBounded ObjectOneOf(:IOBurstMoreThanCPUBurst))
+SubClassOf(:ThreadIOBounded :ThreadAboutBurst)
+
+# Class: :ThreadLibrary (:ThreadLibrary)
+
+SubClassOf(:ThreadLibrary :ApplicationProgram)
+
+# Class: :ThreadNew (:ThreadNew)
+
+EquivalentClasses(:ThreadNew ObjectIntersectionOf(:ThreadAboutState ObjectHasValue(:Has :ThreadNEW)))
+SubClassOf(:ThreadNew :ThreadAboutState)
+SubClassOf(:ThreadNew ObjectSomeValuesFrom(:TransitTo :ThreadReady))
+SubClassOf(:ThreadNew ObjectHasValue(:Has :ThreadNEW))
+
+# Class: :ThreadOperation (:ThreadOperation)
+
+SubClassOf(:ThreadOperation :ProcessPart)
+
+# Class: :ThreadQueue (:ThreadQueue)
+
+SubClassOf(:ThreadQueue :ProcessPart)
+SubClassOf(:ThreadQueue ObjectSomeValuesFrom(:Has :Thread))
+
+# Class: :ThreadReady (:ThreadReady)
+
+EquivalentClasses(:ThreadReady ObjectIntersectionOf(:ThreadAboutState ObjectHasValue(:Has :ThreadREADY)))
+SubClassOf(:ThreadReady :ThreadAboutState)
+SubClassOf(:ThreadReady ObjectSomeValuesFrom(:TransitTo :ThreadRunning))
+
+# Class: :ThreadRunning (:ThreadRunning)
+
+EquivalentClasses(:ThreadRunning ObjectIntersectionOf(:ThreadAboutState ObjectHasValue(:Has :ThreadRUNNING)))
+SubClassOf(:ThreadRunning :ThreadAboutState)
+SubClassOf(:ThreadRunning ObjectSomeValuesFrom(:TransitTo :ThreadReady))
+SubClassOf(:ThreadRunning ObjectSomeValuesFrom(:TransitTo :ThreadTerminated))
+SubClassOf(:ThreadRunning ObjectSomeValuesFrom(:TransitTo :ThreadWaiting))
+
+# Class: :ThreadStack (:ThreadStack)
+
+SubClassOf(:ThreadStack :ProcessPart)
+
+# Class: :ThreadState (:ThreadState)
+
+EquivalentClasses(:ThreadState ObjectOneOf(:ThreadNEW :ThreadREADY :ThreadRUNNING :ThreadTERMINATED :ThreadWAITING))
+SubClassOf(:ThreadState :ProcessPart)
+
+# Class: :ThreadTerminated (:ThreadTerminated)
+
+EquivalentClasses(:ThreadTerminated ObjectIntersectionOf(:ThreadAboutState ObjectHasValue(:Has :ThreadTERMINATED)))
+SubClassOf(:ThreadTerminated :ThreadAboutState)
+
+# Class: :ThreadTermination (:ThreadTermination)
+
+SubClassOf(:ThreadTermination :ThreadOperation)
+SubClassOf(:ThreadTermination ObjectSomeValuesFrom(:Terminate :Thread))
+
+# Class: :ThreadWaiting (:ThreadWaiting)
+
+EquivalentClasses(:ThreadWaiting ObjectIntersectionOf(:ThreadAboutState ObjectHasValue(:Has :ThreadWAITING)))
+SubClassOf(:ThreadWaiting :ThreadAboutState)
+SubClassOf(:ThreadWaiting ObjectSomeValuesFrom(:TransitTo :ThreadReady))
+
+# Class: :TurnAroundTime (:TurnAroundTime)
+
+SubClassOf(:TurnAroundTime :SchedulingCriteria)
+
+# Class: :UnboundedBuffer (:UnboundedBuffer)
+
+SubClassOf(:UnboundedBuffer :Buffer)
+
+# Class: :UnsafeState (:UnsafeState)
+
+EquivalentClasses(:UnsafeState ObjectIntersectionOf(:OSAboutState ObjectHasValue(:Has :Unsafestate)))
+SubClassOf(:UnsafeState :OSAboutState)
+
+# Class: :UserStack (:UserStack)
+
+SubClassOf(:UserStack :ThreadStack)
+
+# Class: :UserStateCPU (:UserStateCPU)
+
+EquivalentClasses(:UserStateCPU ObjectIntersectionOf(:CPUAboutState ObjectHasValue(:Has :Userstate)))
+SubClassOf(:UserStateCPU :CPUAboutState)
+
+# Class: :UserThread (:UserThread)
+
+SubClassOf(:UserThread :ThreadLibrary)
+
+# Class: :VOperation (:VOperation)
+
+SubClassOf(:VOperation :AtomicOperation)
+SubClassOf(:VOperation ObjectSomeValuesFrom(:RequestToRelease :CriticalResource))
+
+# Class: :WaitingTime (:WaitingTime)
+
+SubClassOf(:WaitingTime :SchedulingCriteria)
+
+
+
+)
